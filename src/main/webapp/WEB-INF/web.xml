@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>seleccionServlet</servlet-name>
+		<servlet-class>seleccionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>seleccionServlet</servlet-name>
+		<url-pattern>seleccionServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
