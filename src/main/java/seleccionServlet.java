@@ -20,8 +20,6 @@ public class seleccionServlet extends HttpServlet {
 	out.println("</head>");
 	out.println("<body>");	
 		out.println("Anio: "+ request.getParameter("anio")+"<br>");
-		out.println("Mes: "+ request.getParameter("mes")+"<br>");
-		out.println("Dia: "+ request.getParameter("dia")+"<br>");
 	out.println("</body>");
 	out.println("</html>");
 
