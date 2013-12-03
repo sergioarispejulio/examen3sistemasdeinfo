@@ -15,11 +15,20 @@ public class seleccionServlet extends HttpServlet {
 	protected void service(HttpServletRequest request,
 		HttpServletResponse response) throws ServletException, IOException {
 	PrintWriter out = response.getWriter();
+	Logica verificador = new Logica();
+	int anio = Integer.parseInt(request.getParameter("anio"));
 	out.println("<html>");
 	out.println("<head>");
 	out.println("</head>");
 	out.println("<body>");	
-		out.println("Anio: "+ request.getParameter("anio")+"<br>");
+	if(verificador.verificacionBisiesto(anio))
+	{
+		out.println("El anio es bisiesto");
+	}
+	else
+	{
+		out.println("El anio no es bisiesto");
+	}
 	out.println("</body>");
 	out.println("</html>");
 
